@@ -1,90 +1,86 @@
-# Expense Management System
+Expense Management System
 
-This project is an advanced Expense Management System that consists of a **Streamlit** frontend application and a **FastAPI** backend server. It helps users efficiently track and analyze expenses with interactive visualizations and a user-friendly interface.
+This project is a comprehensive Expense Management System featuring a Streamlit-based frontend and a FastAPI backend. It allows users to efficiently monitor and analyze their expenses with an intuitive interface and interactive visualizations.
 
----
+🚀 Key Features
 
-## 🚀 Features
+Expense Management: Easily add, update, and delete expenses.
 
-- **Expense Tracking**: Add, update, and delete expenses effortlessly.
-- **Category-Based Analytics**: View expenses categorized for better insights.
-- **Monthly Analysis**: Get a breakdown of expenses by month.
-- **FastAPI Backend**: Ensures a fast, scalable, and efficient API.
-- **Streamlit UI**: Provides an intuitive interface for users.
-- **Automated Tests**: Covers both frontend and backend components.
-- **Easy Deployment**: Can be hosted on cloud platforms.
+Categorized Insights: View expenses grouped by category for better financial understanding.
 
----
+Monthly Reports: Analyze spending patterns with detailed monthly breakdowns.
 
-## 📁 Project Structure
+Real-Time Visualization: Gain insights through dynamic charts and graphs.
 
-- **`frontend/`** - Contains the Streamlit application code.
-- **`backend/`** - Houses the FastAPI backend server.
-- **`tests/`** - Includes test cases for both frontend and backend.
-- **`requirements.txt`** - Lists all necessary dependencies.
-- **`README.md`** - Documentation and setup guide.
+Secure and Efficient: Utilizes FastAPI for a high-performance backend and Streamlit for an interactive frontend experience.
 
----
+🛠️ Technologies Used
 
-## 📷 Sample Screenshots
+Frontend: Streamlit (Python)
 
-### ➕ Add/Update Expenses
-![Add Update](https://github.com/user-attachments/assets/4a7560cf-fea8-467a-a985-ea6c299177f6)
+Backend: FastAPI (Python)
 
-### 📊 Analytics by Category
-![Analytics Categories](https://github.com/user-attachments/assets/b82dfdb7-445d-43bf-8a25-31320f4ff5a4)
+Database: SQLite / PostgreSQL
 
-### 📅 Analytics by Month
-![Analytics Month](https://github.com/user-attachments/assets/0b5887a1-4f65-4270-8238-ca7c6211cb26)
+Libraries: Pandas, Matplotlib, Plotly, and more
 
----
+📌 Setup Instructions
 
-## 🛠 Setup Instructions
+Clone the Repository:
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/maityaditya/Expense-Management-System.git
+git clone <repository_url>
 cd Expense-Management-System
-```
 
-### 2️⃣ Install Dependencies
-```bash
+Install Dependencies:
+
 pip install -r requirements.txt
-```
 
-### 3️⃣ Run the FastAPI Backend Server
-```bash
-cd backend
-uvicorn server:app --reload
-```
+Run the Backend (FastAPI):
 
-### 4️⃣ Start the Streamlit Frontend Application
-```bash
-streamlit run frontend/app.py
-```
+uvicorn main:app --reload
 
----
+Run the Frontend (Streamlit):
 
-## 📡 API Documentation
-Once the backend is running, you can access the API documentation at:
+streamlit run app.py
 
-- **Swagger UI**: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-- **Redoc UI**: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+Access the Application:
 
----
+API: http://127.0.0.1:8000/docs
 
-## 📜 License
-This project is licensed under the **MIT License**.
+Web Interface: http://localhost:8501
 
----
+📖 Usage
 
-## 💡 Contributing
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
+Launch the application and navigate to the web interface.
 
----
+Input your expenses and categorize them for easy tracking.
 
-## 📧 Contact
-For any queries or suggestions, reach out at **maityaditya2325@gmail.com**.
+View graphical insights and reports to understand spending trends.
 
----
+Modify or delete entries as needed for accurate tracking.
 
+📌 Future Enhancements
+
+User Authentication: Secure login and profile management.
+
+Budget Planning: Set financial goals and track progress.
+
+Multi-User Support: Allow multiple users to manage expenses independently.
+
+Cloud Integration: Sync data with cloud storage for seamless access.
+
+💡 Contributing
+
+Contributions are welcome! If you'd like to improve the project, follow these steps:
+
+Fork the repository.
+
+Create a new branch (feature-branch).
+
+Commit your changes.
+
+Push to your fork and submit a pull request.
+
+📝 License
+
+This project is open-source and available under the MIT License.
