@@ -20,24 +20,6 @@ A machine learning-powered web application that predicts house prices based on k
 
 ---
 
-## 📂 File Structure
-
-```
-.
-├── app.py                  # Flask backend application
-├── train_model.py          # Script to train and save the ML model
-├── house_price_model.pkl   # Trained model saved using joblib
-├── train.csv               # Dataset used for training
-├── templates/
-│   └── index.html          # UI template for the web interface
-├── static/
-│   └── 3DHome.png          # Icon/image used in the UI
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation (this file)
-```
-
----
-
 ## 🚀 How to Run Locally
 
 1. **Clone this repository**
@@ -91,26 +73,6 @@ A machine learning-powered web application that predicts house prices based on k
 - Saving/loading ML models with `joblib`
 - Designing a clean and responsive frontend with HTML & CSS
 - Integrating ML predictions into a web interface using Flask
-
----
-
-## 📚 Tech Stack
-
-| Category     | Technology          |
-|--------------|---------------------|
-| Language     | Python 3            |
-| ML Framework | scikit-learn        |
-| Web Framework | Flask              |
-| Frontend     | HTML5, CSS3         |
-| Deployment   | (Optional: Heroku, Render, etc.) |
-
----
-
-## 📸 UI Preview
-
-> Lightweight, gradient-themed UI with a clean layout and smooth user interaction.
-
-![UI Screenshot](./Screenshot%202025-04-06%20142723.png)
 
 ---
 
