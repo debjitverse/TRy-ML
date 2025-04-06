@@ -1,86 +1,119 @@
-Expense Management System
 
-This project is a comprehensive Expense Management System featuring a Streamlit-based frontend and a FastAPI backend. It allows users to efficiently monitor and analyze their expenses with an intuitive interface and interactive visualizations.
+# 🏡 House Price Prediction Web App
 
-🚀 Key Features
+A machine learning-powered web application that predicts house prices based on key features like quality, living area, garage capacity, and basement size. This project integrates **Python**, **Flask**, **HTML/CSS**, and **scikit-learn**, making it a perfect blend of **data science** and **web development**.
 
-Expense Management: Easily add, update, and delete expenses.
+![Screenshot](./Screenshot%202025-04-06%20142723.png)
 
-Categorized Insights: View expenses grouped by category for better financial understanding.
+---
 
-Monthly Reports: Analyze spending patterns with detailed monthly breakdowns.
+## 📌 Project Highlights
 
-Real-Time Visualization: Gain insights through dynamic charts and graphs.
+- 💡 **Trained ML Model**: Predicts house prices using a `RandomForestRegressor`.
+- 🌐 **Frontend**: Responsive and modern UI built with **HTML5** and **CSS3**.
+- ⚙️ **Backend**: Flask-based server processes input and displays predictions.
+- 🧠 **Features Used**:
+  - `OverallQual`: Overall material and finish quality
+  - `GrLivArea`: Above-ground living area (sqft)
+  - `GarageCars`: Number of cars that can fit in the garage
+  - `TotalBsmtSF`: Total basement area (sqft)
 
-Secure and Efficient: Utilizes FastAPI for a high-performance backend and Streamlit for an interactive frontend experience.
+---
 
-🛠️ Technologies Used
+## 📂 File Structure
 
-Frontend: Streamlit (Python)
+```
+.
+├── app.py                  # Flask backend application
+├── train_model.py          # Script to train and save the ML model
+├── house_price_model.pkl   # Trained model saved using joblib
+├── train.csv               # Dataset used for training
+├── templates/
+│   └── index.html          # UI template for the web interface
+├── static/
+│   └── 3DHome.png          # Icon/image used in the UI
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation (this file)
+```
 
-Backend: FastAPI (Python)
+---
 
-Database: SQLite / PostgreSQL
+## 🚀 How to Run Locally
 
-Libraries: Pandas, Matplotlib, Plotly, and more
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/your-username/house-price-predictor.git
+   cd house-price-predictor
+   ```
 
-📌 Setup Instructions
+2. **Create a virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # or venv\Scripts\activate on Windows
+   ```
 
-Clone the Repository:
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-git clone <repository_url>
-cd Expense-Management-System
+4. **Train the model (Optional)**
+   If you want to retrain the model:
+   ```bash
+   python train_model.py
+   ```
 
-Install Dependencies:
+5. **Run the Flask app**
+   ```bash
+   python app.py
+   ```
 
-pip install -r requirements.txt
+6. **Open in browser**
+   Visit `http://127.0.0.1:5000` in your web browser.
 
-Run the Backend (FastAPI):
+---
 
-uvicorn main:app --reload
+## 📊 Example Input
 
-Run the Frontend (Streamlit):
+| Feature              | Value      |
+|----------------------|------------|
+| Overall Quality      | 7          |
+| Living Area (sqft)   | 1800       |
+| Garage Capacity      | 2          |
+| Basement Area (sqft) | 900        |
 
-streamlit run app.py
+---
 
-Access the Application:
+## 🎓 What I Learned
 
-API: http://127.0.0.1:8000/docs
+- Building and training a machine learning regression model
+- Preprocessing real-world datasets with missing values
+- Saving/loading ML models with `joblib`
+- Designing a clean and responsive frontend with HTML & CSS
+- Integrating ML predictions into a web interface using Flask
 
-Web Interface: http://localhost:8501
+---
 
-📖 Usage
+## 📚 Tech Stack
 
-Launch the application and navigate to the web interface.
+| Category     | Technology          |
+|--------------|---------------------|
+| Language     | Python 3            |
+| ML Framework | scikit-learn        |
+| Web Framework | Flask              |
+| Frontend     | HTML5, CSS3         |
+| Deployment   | (Optional: Heroku, Render, etc.) |
 
-Input your expenses and categorize them for easy tracking.
+---
 
-View graphical insights and reports to understand spending trends.
+## 📸 UI Preview
 
-Modify or delete entries as needed for accurate tracking.
+> Lightweight, gradient-themed UI with a clean layout and smooth user interaction.
 
-📌 Future Enhancements
+![UI Screenshot](./Screenshot%202025-04-06%20142723.png)
 
-User Authentication: Secure login and profile management.
+---
 
-Budget Planning: Set financial goals and track progress.
+## 📎 License
 
-Multi-User Support: Allow multiple users to manage expenses independently.
-
-Cloud Integration: Sync data with cloud storage for seamless access.
-
-💡 Contributing
-
-Contributions are welcome! If you'd like to improve the project, follow these steps:
-
-Fork the repository.
-
-Create a new branch (feature-branch).
-
-Commit your changes.
-
-Push to your fork and submit a pull request.
-
-📝 License
-
-This project is open-source and available under the MIT License.
+This project is open-source and available under the [MIT License](LICENSE).
